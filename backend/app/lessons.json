@@ -1,0 +1,33 @@
+[
+  {
+    "id": "math-multiplication-properties",
+    "subject": "math",
+    "title_ar": "خواص عملية الضرب",
+    "title_en": "Multiplication properties",
+    "keywords": ["ضرب", "خواص", "تبديل", "واحد", "صفر", "multiplication", "properties"],
+    "explanation_ar": "في الضرب نستطيع تبديل ترتيب العددين وتظل النتيجة نفسها. مثلًا: ثلاثة في أربعة تساوي اثني عشر، وأربعة في ثلاثة تساوي اثني عشر أيضًا. وعندما نضرب أي عدد في واحد يبقى العدد كما هو.",
+    "explanation_en": "When multiplying, we can switch the order of the two numbers and keep the same result. Three times four and four times three both equal twelve. Any number multiplied by one stays the same.",
+    "question_ar": "ما ناتج أربعة في ثلاثة؟",
+    "question_en": "What is four times three?",
+    "answer": "12",
+    "hint_ar": "حاولي مرة أخرى. اجمعي العدد أربعة ثلاث مرات: أربعة، ثم ثمانية، ثم اثنا عشر.",
+    "hint_en": "Try again. Add four three times: four, eight, twelve.",
+    "source": "Grade 3 Math dataset - multiplication properties (demo content pending OCR review)"
+  },
+  {
+    "id": "math-missing-number",
+    "subject": "math",
+    "title_ar": "إيجاد العدد المجهول",
+    "title_en": "Finding the missing number",
+    "keywords": ["مجهول", "عدد", "ناقص", "ضرب", "missing", "number"],
+    "explanation_ar": "لإيجاد العدد المجهول في جملة الضرب، نفكر في جدول الضرب. إذا كان ثلاثة في عدد مجهول يساوي اثني عشر، نسأل: ثلاثة في كم تساوي اثني عشر؟ الإجابة أربعة.",
+    "explanation_en": "To find a missing number in a multiplication sentence, use the multiplication table. If three times a missing number equals twelve, ask: three times what equals twelve? The answer is four.",
+    "question_ar": "ثلاثة في عدد مجهول يساوي خمسة عشر. ما العدد المجهول؟",
+    "question_en": "Three times a missing number equals fifteen. What is the missing number?",
+    "answer": "5",
+    "hint_ar": "حاولي العد بالقفز ثلاثات حتى تصلي إلى خمسة عشر.",
+    "hint_en": "Try skip-counting by threes until you reach fifteen.",
+    "source": "Grade 3 Math dataset - missing number (demo content pending OCR review)"
+  }
+]
+
