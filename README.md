@@ -32,5 +32,11 @@ The uploaded Grade 3 Math PDF is image-based and must pass Arabic OCR plus human
 
 ## Current scope
 
-This first slice includes the complete accessible learning loop and a small reviewed demo knowledge base. Production speech services, authenticated teacher dashboards, persistent progress, and group sessions are planned next.
+This first slice includes the complete accessible learning loop and a structured preview knowledge base for Math and ICT. Every lesson retains source-page metadata and remains marked `needs_owner_review` until the content owner approves the transcription. Production RAG, speech services, authenticated teacher dashboards, persistent progress, and group sessions are planned next.
 
+## Validate curriculum
+
+```bash
+python scripts/validate_curriculum.py
+python -m pytest -q
+```
