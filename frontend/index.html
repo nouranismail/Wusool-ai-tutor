@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="وصول - مدرس صوتي ذكي ومتاح للجميع">
+  <title>وصول | المدرس الذكي</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+  <header class="topbar">
+    <div class="brand" aria-label="وصول، المدرس الذكي"><span aria-hidden="true">وُ</span><strong>وصول</strong></div>
+    <button id="language" class="quiet-button" type="button" aria-label="Switch to English">English</button>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="welcome" class="panel hero" aria-labelledby="welcome-title">
+      <p class="eyebrow">نتعلم بطريقتك</p>
+      <h1 id="welcome-title">مرحبًا بك في وصول</h1>
+      <p class="lead">مدرسك الصوتي للرياضيات ومهارات الحاسب. اختر طريقة العرض المناسبة لك.</p>
+      <div class="choice-grid" role="group" aria-label="اختر طريقة الوصول">
+        <button class="choice-card dyslexia" data-mode="dyslexia" type="button">
+          <span class="choice-icon" aria-hidden="true">أ ب</span>
+          <strong>دعم الديسلكسيا</strong><small>ألوان هادئة ونص واضح</small>
+        </button>
+        <button class="choice-card vision" data-mode="vision" type="button">
+          <span class="choice-icon" aria-hidden="true">◉</span>
+          <strong>دعم الإبصار</strong><small>صوت أولًا وتباين مرتفع</small>
+        </button>
+      </div>
+    </section>
+
+    <section id="subjects" class="panel hidden" aria-labelledby="subjects-title">
+      <p class="eyebrow">الخطوة الأولى</p>
+      <h2 id="subjects-title">ماذا تريد أن نتعلم؟</h2>
+      <p>يمكنك الضغط على المادة أو قول «رياضيات».</p>
+      <div class="choice-grid">
+        <button class="choice-card subject" data-subject="math" type="button"><span aria-hidden="true">× ÷</span><strong>الرياضيات</strong><small>منهج الصف الثالث</small></button>
+        <button class="choice-card subject" data-subject="ict" type="button"><span aria-hidden="true">⌨</span><strong>مهارات الحاسب</strong><small>أساسيات الحاسوب</small></button>
+      </div>
+      <button id="listen-subject" class="voice-button" type="button"><span aria-hidden="true">●</span> اختر بصوتك</button>
+    </section>
+
+    <section id="lesson" class="panel hidden" aria-live="polite" aria-labelledby="lesson-title">
+      <p id="lesson-source" class="eyebrow"></p>
+      <h2 id="lesson-title">الدرس</h2>
+      <p id="lesson-text" class="lesson-text"></p>
+      <div class="actions">
+        <button id="speak-lesson" class="secondary-button" type="button">استمع مرة أخرى</button>
+        <button id="start-question" class="primary-button" type="button">ابدأ السؤال</button>
+      </div>
+      <div id="question-box" class="question-box hidden">
+        <h3>سؤالك</h3><p id="question"></p>
+        <label for="answer">قل الإجابة أو اكتبها</label>
+        <div class="answer-row"><input id="answer" inputmode="numeric" autocomplete="off"><button id="listen-answer" class="voice-button compact" type="button" aria-label="أجب بصوتك">●</button></div>
+        <button id="submit-answer" class="primary-button" type="button">تحقق من إجابتي</button>
+        <p id="feedback" class="feedback" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="voice-status" class="voice-status" role="status" aria-live="assertive"></div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
