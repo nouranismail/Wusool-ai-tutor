@@ -38,5 +38,8 @@ This first slice includes the complete accessible learning loop and a structured
 
 ```bash
 python scripts/validate_curriculum.py
+python scripts/build_index.py
 python -m pytest -q
 ```
+
+The local RAG retriever uses deterministic Arabic-aware hashing embeddings and a persistent SQLite vector index. It requires no API key and returns page-level citations. The next phase connects the retrieved context to a configurable generative model with strict curriculum guardrails.

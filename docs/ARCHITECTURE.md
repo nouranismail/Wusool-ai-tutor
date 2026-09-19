@@ -9,7 +9,7 @@ flowchart TD
     C --> F[Question and feedback engine]
 ```
 
-The MVP intentionally keeps retrieval deterministic and inspectable. A production release can replace the keyword retriever with multilingual embeddings and a vector database without changing the public API.
+The MVP uses deterministic multilingual hashing embeddings and a persistent SQLite vector index. Retrieval is inspectable, filtered by subject, and returns source-page citations. The embedder interface can later be replaced with a hosted or sentence-transformer provider without changing the tutor API.
 
 ## Safety boundaries
 
@@ -26,4 +26,3 @@ The MVP intentionally keeps retrieval deterministic and inspectable. A productio
 - Higher-quality Arabic speech-to-text and text-to-speech.
 - Parent/teacher authentication and progress dashboards.
 - Facilitated group sessions with turn-taking and child-safety controls.
-
