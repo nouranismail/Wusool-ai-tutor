@@ -10,6 +10,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+from .rag.retriever import CurriculumRetriever
+
 
 ROOT = Path(__file__).resolve().parents[2]
 LESSONS_PATH = ROOT / "data" / "reviewed" / "curriculum.json"
@@ -32,6 +34,7 @@ def load_lessons() -> list[dict]:
 
 
 LESSONS = load_lessons()
+RETRIEVER = CurriculumRetriever(LESSONS_PATH, ROOT / "data" / "vector_db" / "curriculum.sqlite3")
 
 
 def normalize(text: str) -> list[str]:
@@ -45,14 +48,12 @@ def normalize_answer(text: str) -> str:
 
 
 def retrieve(subject: str, query: str) -> dict:
-    candidates = [lesson for lesson in LESSONS if lesson["subject"] == subject]
-    if not candidates:
+    matches = RETRIEVER.search(query, subject, limit=3)
+    if not matches:
         raise HTTPException(status_code=404, detail="No reviewed content for this subject yet")
-    query_terms = set(normalize(query))
-    return max(
-        candidates,
-        key=lambda lesson: len(query_terms & set(normalize(" ".join(lesson["keywords"] + [lesson["title_ar"]])))),
-    )
+    lesson_id = matches[0]["lesson_id"]
+    lesson = next(item for item in LESSONS if item["id"] == lesson_id)
+    return {**lesson, "retrieval_matches": matches}
 
 
 app = FastAPI(
@@ -97,6 +98,10 @@ def tutor(request: TutorRequest) -> dict:
         "question": question[f"question_{request.language}"],
         "source": lesson["source"],
         "review_status": lesson["review_status"],
+        "citations": [
+            {"title": match["title_ar"], "file": match["source_file"], "pages": match["pages"], "score": match["score"]}
+            for match in lesson["retrieval_matches"]
+        ],
     }
 
 
