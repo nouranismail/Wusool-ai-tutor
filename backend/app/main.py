@@ -5,12 +5,13 @@ import re
 from pathlib import Path
 from typing import Literal
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .rag.retriever import CurriculumRetriever
+from .group_sessions import GroupSessionManager
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -29,12 +30,17 @@ class AnswerRequest(BaseModel):
     answer: str = Field(min_length=1, max_length=100)
 
 
+class CreateRoomRequest(BaseModel):
+    lesson_id: str
+
+
 def load_lessons() -> list[dict]:
     return json.loads(LESSONS_PATH.read_text(encoding="utf-8"))
 
 
 LESSONS = load_lessons()
 RETRIEVER = CurriculumRetriever(LESSONS_PATH, ROOT / "data" / "vector_db" / "curriculum.sqlite3")
+GROUP_SESSIONS = GroupSessionManager(LESSONS)
 
 
 def normalize(text: str) -> list[str]:
@@ -94,8 +100,10 @@ def tutor(request: TutorRequest) -> dict:
         "lesson_id": lesson["id"],
         "title": lesson[f"title_{request.language}"],
         "explanation": explanation,
+        "lesson_steps": lesson.get(f"lesson_steps_{request.language}", [explanation, "ملخص الدرس: " + explanation] if request.language == "ar" else [explanation]),
         "question_id": question["id"],
         "question": question[f"question_{request.language}"],
+        "questions": [{"id": item["id"], "text": item[f"question_{request.language}"]} for item in lesson["questions"]],
         "source": lesson["source"],
         "review_status": lesson["review_status"],
         "citations": [
@@ -123,6 +131,42 @@ def answer(request: AnswerRequest) -> dict:
         "feedback_ar": "إجابة رائعة! أحسنت." if correct else question["hint_ar"],
         "feedback_en": "Great answer! Well done." if correct else question["hint_en"],
     }
+
+
+@app.post("/api/group/rooms")
+def create_group_room(request: CreateRoomRequest) -> dict:
+    try:
+        room = GROUP_SESSIONS.create(request.lesson_id)
+    except KeyError as error:
+        raise HTTPException(status_code=404, detail=str(error)) from error
+    return {"code": room.code, "host_token": room.host_token, "lesson_title": room.lesson["title_ar"]}
+
+
+@app.get("/api/group/rooms/{code}")
+def group_room(code: str) -> dict:
+    room = GROUP_SESSIONS.get(code)
+    if room is None:
+        raise HTTPException(status_code=404, detail="Room not found")
+    return room.public_state()
+
+
+@app.websocket("/ws/group/{code}")
+async def group_socket(websocket: WebSocket, code: str, name: str, role: str = "participant", token: str = "") -> None:
+    room = GROUP_SESSIONS.get(code)
+    if room is None or role not in {"host", "participant"} or (role == "host" and token != room.host_token):
+        await websocket.close(code=1008)
+        return
+    safe_name = name.strip()[:30] or ("المعلم" if role == "host" else "طفل")
+    await GROUP_SESSIONS.connect(room, safe_name, websocket, role)
+    try:
+        while True:
+            message = await websocket.receive_json()
+            if message.get("type") == "start" and role == "host":
+                await GROUP_SESSIONS.start(room)
+            elif message.get("type") == "answer" and role == "participant":
+                await GROUP_SESSIONS.submit_answer(room, safe_name, str(message.get("answer", "")), normalize_answer)
+    except WebSocketDisconnect:
+        await GROUP_SESSIONS.disconnect(room, safe_name, role)
 
 
 app.mount("/assets", StaticFiles(directory=ROOT / "frontend"), name="assets")

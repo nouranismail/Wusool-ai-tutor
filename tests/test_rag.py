@@ -1,11 +1,11 @@
-from backend.app.main import RETRIEVER, retrieve
+from backend.app.main import LESSONS, RETRIEVER, retrieve
 
 
-def test_vector_index_contains_two_chunks_per_lesson():
+def test_vector_index_contains_explanation_and_question_chunks():
     RETRIEVER.ensure_index()
     with __import__("sqlite3").connect(RETRIEVER.store.path) as connection:
         count = connection.execute("SELECT COUNT(*) FROM chunks").fetchone()[0]
-    assert count == 18
+    assert count == len(LESSONS) + sum(len(lesson["questions"]) for lesson in LESSONS)
 
 
 def test_math_missing_number_retrieval():
@@ -24,4 +24,3 @@ def test_subject_filter_prevents_cross_subject_results():
     results = RETRIEVER.search("الكمبيوتر والمدخلات", "math", limit=5)
     assert results
     assert {item["subject"] for item in results} == {"math"}
-

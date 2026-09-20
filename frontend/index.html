@@ -6,6 +6,7 @@
   <meta name="description" content="وصول - مدرس صوتي ذكي ومتاح للجميع">
   <title>وصول | المدرس الذكي</title>
   <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/group.css">
 </head>
 <body>
   <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
@@ -29,6 +30,7 @@
           <strong>دعم الإبصار</strong><small>صوت أولًا وتباين مرتفع</small>
         </button>
       </div>
+      <button id="join-group-home" class="quiet-button" type="button">الانضمام إلى جلسة جماعية</button>
     </section>
 
     <section id="subjects" class="panel hidden" aria-labelledby="subjects-title">
@@ -48,7 +50,8 @@
       <p id="lesson-text" class="lesson-text"></p>
       <div class="actions">
         <button id="speak-lesson" class="secondary-button" type="button">استمع مرة أخرى</button>
-        <button id="start-question" class="primary-button" type="button">ابدأ السؤال</button>
+        <button id="start-question" class="primary-button hidden" type="button">تدرب بمفردك</button>
+        <button id="create-group" class="secondary-button hidden" type="button">أنشئ جلسة جماعية</button>
       </div>
       <div id="question-box" class="question-box hidden">
         <h3>سؤالك</h3><p id="question"></p>
@@ -56,6 +59,21 @@
         <div class="answer-row"><input id="answer" inputmode="numeric" autocomplete="off"><button id="listen-answer" class="voice-button compact" type="button" aria-label="أجب بصوتك">●</button></div>
         <button id="submit-answer" class="primary-button" type="button">تحقق من إجابتي</button>
         <p id="feedback" class="feedback" role="status"></p>
+      </div>
+    </section>
+
+    <section id="group" class="panel hidden" aria-live="polite" aria-labelledby="group-title">
+      <p class="eyebrow">جلسة جماعية مباشرة</p>
+      <h2 id="group-title">انضم باستخدام رمز الغرفة</h2>
+      <div id="group-join-form">
+        <label for="group-code">رمز الغرفة</label><input id="group-code" maxlength="6" autocomplete="off">
+        <label for="participant-name">اسم مستعار للطفل</label><input id="participant-name" maxlength="30" autocomplete="off">
+        <button id="join-group" class="primary-button" type="button">انضم للجلسة</button>
+      </div>
+      <div id="group-room" class="hidden">
+        <p>رمز الغرفة: <strong id="room-code-display"></strong></p><p id="group-status" role="status"></p><ul id="participants"></ul>
+        <button id="start-group" class="primary-button hidden" type="button">ابدأ الجلسة</button>
+        <div id="group-question-box" class="question-box hidden"><p id="group-question"></p><div class="answer-row"><input id="group-answer" autocomplete="off"><button id="group-listen-answer" class="voice-button compact" type="button">●</button></div><button id="send-group-answer" class="primary-button" type="button">أرسل الإجابة</button></div>
       </div>
     </section>
   </main>

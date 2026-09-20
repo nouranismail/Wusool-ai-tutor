@@ -43,3 +43,11 @@ python -m pytest -q
 ```
 
 The local RAG retriever uses deterministic Arabic-aware hashing embeddings and a persistent SQLite vector index. It requires no API key and returns page-level citations. The next phase connects the retrieved context to a configurable generative model with strict curriculum guardrails.
+
+## Voice-first and group learning
+
+- Visual-impairment mode speaks the subject choices and immediately listens after the user activates the mode.
+- Lessons are narrated in ordered steps before assessment begins.
+- A teacher can create a six-character room code for a live, turn-based group session.
+- Learners join from separate devices using nicknames; answers are accepted only during the learner's turn.
+- Rooms are held in memory for the MVP, and voice recordings are not stored.
