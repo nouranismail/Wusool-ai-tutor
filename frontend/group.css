@@ -1,0 +1,6 @@
+.panel label{display:block;font-weight:800;margin:1rem 0 .45rem}
+.panel input{width:100%;border:2px solid #c8bfdf;border-radius:16px;padding:1rem;font:inherit}
+.panel>button,.hero>button{margin-top:1.25rem}
+#participants{font-size:1.1rem;line-height:1.8}
+.current-turn{font-weight:900;color:var(--purple-dark)}
+.lesson-text{white-space:pre-line}

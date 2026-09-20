@@ -26,3 +26,7 @@ The MVP uses deterministic multilingual hashing embeddings and a persistent SQLi
 - Higher-quality Arabic speech-to-text and text-to-speech.
 - Parent/teacher authentication and progress dashboards.
 - Facilitated group sessions with turn-taking and child-safety controls.
+
+## Group-session MVP
+
+FastAPI WebSockets synchronize a teacher host and learners on separate devices. The server owns turn order, broadcasts one curriculum question at a time, and rejects out-of-turn answers. Rooms use short codes, accept nicknames only, live in server memory, and disappear when the server restarts. Production deployment still requires authenticated teachers, room expiry, rate limits, consent controls, and a shared WebSocket state service for multiple server instances.
