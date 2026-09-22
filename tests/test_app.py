@@ -19,3 +19,9 @@ def test_curriculum_has_both_subjects_and_sources():
 
 def test_arabic_digits_are_normalized():
     assert normalize_answer("٧٠") == "70"
+
+
+def test_first_math_lesson_teaches_fully_before_assessment():
+    lesson = next(item for item in validate() if item["id"] == "math-properties-1")
+    assert len(lesson["lesson_steps_ar"]) >= 7
+    assert len(lesson["questions"]) >= 6
