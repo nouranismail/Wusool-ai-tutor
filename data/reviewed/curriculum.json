@@ -5,7 +5,14 @@
     "grade": 3,
     "title_ar": "خواص الضرب - الجزء الأول",
     "title_en": "Multiplication properties - part one",
-    "keywords": ["خواص", "ضرب", "تبديل", "مضروب", "ناتج", "commutative"],
+    "keywords": [
+      "خواص",
+      "ضرب",
+      "تبديل",
+      "مضروب",
+      "ناتج",
+      "commutative"
+    ],
     "explanation_ar": "يمكن تبديل ترتيب العددين في عملية الضرب ويظل الناتج نفسه. مثلًا: ثلاثة في سبعة تساوي واحدًا وعشرين، وسبعة في ثلاثة تساوي واحدًا وعشرين أيضًا. وعندما نزيد أحد العددين بمقدار واحد، يزيد الناتج بمقدار العدد الآخر.",
     "explanation_en": "The order of two factors can be switched without changing the product. Three times seven and seven times three both equal twenty-one.",
     "lesson_steps_ar": [
@@ -19,7 +26,11 @@
         "id": "math-p1-q1",
         "question_ar": "ما ناتج ثلاثة في سبعة؟",
         "question_en": "What is three times seven?",
-        "accepted_answers": ["21", "واحد وعشرون", "واحد وعشرين"],
+        "accepted_answers": [
+          "21",
+          "واحد وعشرون",
+          "واحد وعشرين"
+        ],
         "hint_ar": "عد بالقفز سبعات ثلاث مرات.",
         "hint_en": "Skip-count by sevens three times."
       },
@@ -27,7 +38,13 @@
         "id": "math-p1-q2",
         "question_ar": "إذا كان أربعة في ستة يساوي أربعة وعشرين، فما ناتج ستة في أربعة؟",
         "question_en": "If four times six is twenty-four, what is six times four?",
-        "accepted_answers": ["24", "اربعة وعشرون", "أربعة وعشرون", "اربعة وعشرين", "أربعة وعشرين"],
+        "accepted_answers": [
+          "24",
+          "اربعة وعشرون",
+          "أربعة وعشرون",
+          "اربعة وعشرين",
+          "أربعة وعشرين"
+        ],
         "hint_ar": "استخدم خاصية الإبدال. الناتج لا يتغير.",
         "hint_en": "Use the commutative property; the result stays the same."
       },
@@ -35,7 +52,12 @@
         "id": "math-p1-q3",
         "question_ar": "هل يتغير ناتج الضرب عندما نبدل ترتيب العاملين؟",
         "question_en": "Does the product change when the factors switch order?",
-        "accepted_answers": ["لا", "لأ", "لا يتغير", "no"],
+        "accepted_answers": [
+          "لا",
+          "لأ",
+          "لا يتغير",
+          "no"
+        ],
         "hint_ar": "تذكر ثلاثة في سبعة وسبعة في ثلاثة.",
         "hint_en": "Remember three times seven and seven times three."
       },
@@ -43,7 +65,12 @@
         "id": "math-p1-q4",
         "question_ar": "خمسة في ثمانية يزيد عن خمسة في سبعة بمقدار كم؟",
         "question_en": "Five times eight is more than five times seven by how much?",
-        "accepted_answers": ["5", "خمسة", "خمس", "خمسه"],
+        "accepted_answers": [
+          "5",
+          "خمسة",
+          "خمس",
+          "خمسه"
+        ],
         "hint_ar": "عندما نزيد أحد العاملين بمقدار واحد، يزيد الناتج بمقدار العامل الآخر.",
         "hint_en": "When one factor goes up by one, the product goes up by the other factor."
       },
@@ -51,7 +78,14 @@
         "id": "math-p1-q5",
         "question_ar": "خمسة في أربعة يساوي ستة في أربعة ناقص كم؟",
         "question_en": "Five times four equals six times four minus what?",
-        "accepted_answers": ["4", "أربعة", "أربع", "اربعة", "اربعه", "اربع"],
+        "accepted_answers": [
+          "4",
+          "أربعة",
+          "أربع",
+          "اربعة",
+          "اربعه",
+          "اربع"
+        ],
         "hint_ar": "عند طرح واحد من أحد العاملين، يقل الناتج بمقدار العامل الآخر.",
         "hint_en": "When one factor goes down by one, the product goes down by the other factor."
       },
@@ -59,7 +93,14 @@
         "id": "math-p1-q6",
         "question_ar": "ستة في عدد مجهول تساوي ثلاثة في ستة. ما العدد؟",
         "question_en": "Six times a missing number equals three times six. What is the number?",
-        "accepted_answers": ["3", "ثلاثة", "ثلاث", "تلاتة", "ثلاثه", "تلاته"],
+        "accepted_answers": [
+          "3",
+          "ثلاثة",
+          "ثلاث",
+          "تلاتة",
+          "ثلاثه",
+          "تلاته"
+        ],
         "hint_ar": "بدّل ترتيب العددين، فالناتج يبقى نفسه.",
         "hint_en": "Switch the order of the numbers; the product stays the same."
       },
@@ -67,7 +108,12 @@
         "id": "math-p1-q7",
         "question_ar": "خمسة في ثلاثة يقل عن خمسة في أربعة بمقدار كم؟",
         "question_en": "Five times three is less than five times four by how much?",
-        "accepted_answers": ["5", "خمسة", "خمس", "خمسه"],
+        "accepted_answers": [
+          "5",
+          "خمسة",
+          "خمس",
+          "خمسه"
+        ],
         "hint_ar": "من ثلاثة إلى أربعة زاد العامل بمقدار واحد، فكم يزيد الناتج؟",
         "hint_en": "Going from three to four adds one group. How much is one group?"
       },
@@ -75,14 +121,22 @@
         "id": "math-p1-q8",
         "question_ar": "تسعة في ستة يساوي ثمانية في ستة زائد كم؟",
         "question_en": "Nine times six equals eight times six plus what?",
-        "accepted_answers": ["6", "ستة", "ست", "سته"],
+        "accepted_answers": [
+          "6",
+          "ستة",
+          "ست",
+          "سته"
+        ],
         "hint_ar": "زدنا الثمانية واحدًا لتصبح تسعة، فيزيد الناتج بمقدار العامل الآخر.",
         "hint_en": "Eight became nine, so the product goes up by the other factor."
       }
     ],
     "source": {
       "file": "IMG_9540.pdf",
-      "pages": [2, 3]
+      "pages": [
+        2,
+        3
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -92,7 +146,17 @@
     "grade": 3,
     "title_ar": "خواص الضرب - الجزء الثاني",
     "title_en": "Multiplication properties - part two",
-    "keywords": ["تفكيك", "فكك", "أفكك", "نفكك", "توزيع", "مكونات", "جمع", "ضرب", "distributive"],
+    "keywords": [
+      "تفكيك",
+      "فكك",
+      "أفكك",
+      "نفكك",
+      "توزيع",
+      "مكونات",
+      "جمع",
+      "ضرب",
+      "distributive"
+    ],
     "explanation_ar": "يمكن تفكيك أحد العددين إلى عددين أسهل، ثم نضرب ونجمع الناتجين. مثلًا: ثمانية في أربعة يمكن تفكيك الثمانية إلى خمسة وثلاثة. خمسة في أربعة يساوي عشرين، وثلاثة في أربعة يساوي اثني عشر، والمجموع اثنان وثلاثون.",
     "explanation_en": "A factor can be decomposed into easier numbers, then the partial products are added. Eight times four can be split into five times four plus three times four.",
     "lesson_steps_ar": [
@@ -107,7 +171,11 @@
         "id": "math-p2-q1",
         "question_ar": "ما ناتج ثمانية في أربعة؟",
         "question_en": "What is eight times four?",
-        "accepted_answers": ["32", "اثنان وثلاثون", "اتنين وتلاتين"],
+        "accepted_answers": [
+          "32",
+          "اثنان وثلاثون",
+          "اتنين وتلاتين"
+        ],
         "hint_ar": "احسب خمسة في أربعة، ثم ثلاثة في أربعة، واجمع الناتجين.",
         "hint_en": "Find five times four and three times four, then add."
       },
@@ -115,7 +183,17 @@
         "id": "math-p2-q2",
         "question_ar": "سبعة في ستة: فككنا السبعة إلى خمسة واثنين. خمسة في ستة يساوي ثلاثين، واثنان في ستة يساوي اثني عشر. ما المجموع؟",
         "question_en": "Seven times six: we split seven into five and two. Five times six is thirty and two times six is twelve. What is the total?",
-        "accepted_answers": ["42", "اثنان وأربعون", "اثنان وأربعين", "اثنان واربعين", "اثنين وأربعون", "اثنين وأربعين", "اثنين واربعين", "اثنان واربعون", "اثنين واربعون"],
+        "accepted_answers": [
+          "42",
+          "اثنان وأربعون",
+          "اثنان وأربعين",
+          "اثنان واربعين",
+          "اثنين وأربعون",
+          "اثنين وأربعين",
+          "اثنين واربعين",
+          "اثنان واربعون",
+          "اثنين واربعون"
+        ],
         "hint_ar": "اجمع ثلاثين مع اثني عشر.",
         "hint_en": "Add thirty and twelve."
       },
@@ -123,7 +201,15 @@
         "id": "math-p2-q3",
         "question_ar": "ثلاثة في تسعة: فككنا التسعة إلى أربعة وخمسة. أربعة في ثلاثة يساوي اثني عشر، وخمسة في ثلاثة يساوي خمسة عشر. ما ناتج ثلاثة في تسعة؟",
         "question_en": "Three times nine: we split nine into four and five. Four times three is twelve and five times three is fifteen. What is three times nine?",
-        "accepted_answers": ["27", "سبعة وعشرون", "سبعة وعشرين", "سبع وعشرون", "سبع وعشرين", "سبعه وعشرون", "سبعه وعشرين"],
+        "accepted_answers": [
+          "27",
+          "سبعة وعشرون",
+          "سبعة وعشرين",
+          "سبع وعشرون",
+          "سبع وعشرين",
+          "سبعه وعشرون",
+          "سبعه وعشرين"
+        ],
         "hint_ar": "اجمع اثني عشر مع خمسة عشر.",
         "hint_en": "Add twelve and fifteen."
       },
@@ -131,7 +217,15 @@
         "id": "math-p2-q4",
         "question_ar": "سبعة في تسعة: فككنا السبعة إلى أربعة وثلاثة. ما ناتج أربعة في تسعة زائد ثلاثة في تسعة؟",
         "question_en": "Seven times nine: we split seven into four and three. What is four times nine plus three times nine?",
-        "accepted_answers": ["63", "ثلاثة وستون", "ثلاثة وستين", "ثلاث وستون", "ثلاث وستين", "ثلاثه وستون", "ثلاثه وستين"],
+        "accepted_answers": [
+          "63",
+          "ثلاثة وستون",
+          "ثلاثة وستين",
+          "ثلاث وستون",
+          "ثلاث وستين",
+          "ثلاثه وستون",
+          "ثلاثه وستين"
+        ],
         "hint_ar": "أربعة في تسعة يساوي ستة وثلاثين، وثلاثة في تسعة يساوي سبعة وعشرين.",
         "hint_en": "Four times nine is thirty-six and three times nine is twenty-seven."
       },
@@ -139,14 +233,24 @@
         "id": "math-p2-q5",
         "question_ar": "هل يمكننا تفكيك العدد بأكثر من طريقة ويظل الناتج نفسه؟",
         "question_en": "Can we split a number in more than one way and still get the same product?",
-        "accepted_answers": ["نعم", "أيوه", "ايوه", "اه", "أه", "yes"],
+        "accepted_answers": [
+          "نعم",
+          "أيوه",
+          "ايوه",
+          "اه",
+          "أه",
+          "yes"
+        ],
         "hint_ar": "تذكر أننا فككنا ثلاثة في تسعة بطريقتين وكان الناتج سبعة وعشرين في الحالتين.",
         "hint_en": "Remember we split three times nine in two ways and got twenty-seven both times."
       }
     ],
     "source": {
       "file": "IMG_9540.pdf",
-      "pages": [4, 5]
+      "pages": [
+        4,
+        5
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -156,7 +260,14 @@
     "grade": 3,
     "title_ar": "الضرب في عشرة وفي صفر",
     "title_en": "Multiplying by ten and zero",
-    "keywords": ["عشرة", "صفر", "ضرب", "جدول", "times ten", "zero"],
+    "keywords": [
+      "عشرة",
+      "صفر",
+      "ضرب",
+      "جدول",
+      "times ten",
+      "zero"
+    ],
     "explanation_ar": "عند ضرب عدد في عشرة يكون الناتج عشرة في ذلك العدد، فمثلًا ثلاثة في عشرة تساوي ثلاثين، وعشرة في عشرة تساوي مئة. وعند ضرب أي عدد في صفر يكون الناتج صفرًا. ولا تنس أن تكتب التمييز مع العدد في الإجابة النهائية.",
     "explanation_en": "Multiplying a whole number by ten makes ten groups of that number. Multiplying any number by zero gives zero.",
     "lesson_steps_ar": [
@@ -170,7 +281,11 @@
         "id": "math-10-q1",
         "question_ar": "ما ناتج سبعة في عشرة؟",
         "question_en": "What is seven times ten?",
-        "accepted_answers": ["70", "سبعون", "سبعين"],
+        "accepted_answers": [
+          "70",
+          "سبعون",
+          "سبعين"
+        ],
         "hint_ar": "فكر في سبع مجموعات، في كل مجموعة عشرة.",
         "hint_en": "Think of seven groups of ten."
       },
@@ -178,7 +293,10 @@
         "id": "math-10-q2",
         "question_ar": "ما ناتج ثلاثة في صفر؟",
         "question_en": "What is three times zero?",
-        "accepted_answers": ["0", "صفر"],
+        "accepted_answers": [
+          "0",
+          "صفر"
+        ],
         "hint_ar": "أي عدد مضروب في صفر يساوي صفرًا.",
         "hint_en": "Any number times zero is zero."
       },
@@ -186,7 +304,11 @@
         "id": "math-10-q3",
         "question_ar": "ما ناتج عشرة في خمسة؟",
         "question_en": "What is ten times five?",
-        "accepted_answers": ["50", "خمسون", "خمسين"],
+        "accepted_answers": [
+          "50",
+          "خمسون",
+          "خمسين"
+        ],
         "hint_ar": "يمكنك تبديل ترتيب العددين، فخمسة في عشرة تساوي الناتج نفسه.",
         "hint_en": "Switch the order: five times ten gives the same result."
       },
@@ -194,7 +316,18 @@
         "id": "math-10-q4",
         "question_ar": "يحصل ثمانية أشخاص على عشر قطع حلوى لكل واحد منهم. ما إجمالي عدد قطع الحلوى؟",
         "question_en": "Eight people each get ten candies. How many candies in total?",
-        "accepted_answers": ["80", "ثمانون", "ثمانين", "تمانين", "80 قطعة", "ثمانون قطعة", "80 قطعة حلوى", "ثمانون قطعة حلوى", "80 حلوى", "ثمانون حلوى"],
+        "accepted_answers": [
+          "80",
+          "ثمانون",
+          "ثمانين",
+          "تمانين",
+          "80 قطعة",
+          "ثمانون قطعة",
+          "80 قطعة حلوى",
+          "ثمانون قطعة حلوى",
+          "80 حلوى",
+          "ثمانون حلوى"
+        ],
         "hint_ar": "اضرب عشرة في ثمانية.",
         "hint_en": "Multiply ten by eight."
       },
@@ -202,7 +335,21 @@
         "id": "math-10-q5",
         "question_ar": "في كل علبة عشرة أقلام رصاص. إذا اشتريت أربع علب، كم يبلغ عدد الأقلام؟",
         "question_en": "Each box has ten pencils. If you buy four boxes, how many pencils do you have?",
-        "accepted_answers": ["40", "أربعون", "أربعين", "اربعين", "اربعون", "40 قلم", "أربعون قلم", "40 قلما", "أربعون قلما", "40 أقلام", "أربعون أقلام", "40 قلم رصاص", "أربعون قلم رصاص"],
+        "accepted_answers": [
+          "40",
+          "أربعون",
+          "أربعين",
+          "اربعين",
+          "اربعون",
+          "40 قلم",
+          "أربعون قلم",
+          "40 قلما",
+          "أربعون قلما",
+          "40 أقلام",
+          "أربعون أقلام",
+          "40 قلم رصاص",
+          "أربعون قلم رصاص"
+        ],
         "hint_ar": "اضرب عشرة في أربعة.",
         "hint_en": "Multiply ten by four."
       },
@@ -210,14 +357,28 @@
         "id": "math-10-q6",
         "question_ar": "تتسع الحافلة لعشرة أشخاص. إذا كان لدينا ثلاث حافلات، فما إجمالي الأشخاص الذين يمكنهم الصعود؟",
         "question_en": "A bus holds ten people. With three buses, how many people can ride in total?",
-        "accepted_answers": ["30", "ثلاثون", "ثلاثين", "تلاتين", "30 شخص", "ثلاثون شخص", "30 شخصا", "ثلاثون شخصا", "30 أشخاص", "ثلاثون أشخاص"],
+        "accepted_answers": [
+          "30",
+          "ثلاثون",
+          "ثلاثين",
+          "تلاتين",
+          "30 شخص",
+          "ثلاثون شخص",
+          "30 شخصا",
+          "ثلاثون شخصا",
+          "30 أشخاص",
+          "ثلاثون أشخاص"
+        ],
         "hint_ar": "اضرب عشرة في ثلاثة.",
         "hint_en": "Multiply ten by three."
       }
     ],
     "source": {
       "file": "IMG_9540.pdf",
-      "pages": [6, 7]
+      "pages": [
+        6,
+        7
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -227,7 +388,17 @@
     "grade": 3,
     "title_ar": "الضرب في عشرة وفي صفر - الجزء الثاني",
     "title_en": "Multiplying by ten and zero - part two",
-    "keywords": ["نقاط", "رميات", "لعبة", "جدول", "مجموع", "صفر", "ضرب", "game points", "total"],
+    "keywords": [
+      "نقاط",
+      "رميات",
+      "لعبة",
+      "جدول",
+      "مجموع",
+      "صفر",
+      "ضرب",
+      "game points",
+      "total"
+    ],
     "explanation_ar": "في ألعاب النقاط نحسب نقاط كل منطقة بالضرب: عدد النقاط في المنطقة مضروبًا في عدد الرميات التي أصابتها. ثم نجمع نقاط كل المناطق لنعرف المجموع.",
     "explanation_en": "In point games we multiply a zone's points by the number of throws that hit it, then add every zone to get the total score.",
     "lesson_steps_ar": [
@@ -242,7 +413,18 @@
         "id": "math-10b-q1",
         "question_ar": "في لعبة حسن أصابت ثلاث رميات منطقة النقطة الواحدة. كم نقطة حصل عليها منها؟",
         "question_en": "In Hassan's game, three throws hit the one-point zone. How many points is that?",
-        "accepted_answers": ["3", "ثلاثة", "ثلاث", "تلاتة", "ثلاثه", "تلاته", "3 نقطة", "ثلاثة نقطة", "3 نقاط", "ثلاثة نقاط"],
+        "accepted_answers": [
+          "3",
+          "ثلاثة",
+          "ثلاث",
+          "تلاتة",
+          "ثلاثه",
+          "تلاته",
+          "3 نقطة",
+          "ثلاثة نقطة",
+          "3 نقاط",
+          "ثلاثة نقاط"
+        ],
         "hint_ar": "اضرب واحدًا في ثلاثة.",
         "hint_en": "Multiply one by three."
       },
@@ -250,7 +432,14 @@
         "id": "math-10b-q2",
         "question_ar": "أصابت ست رميات منطقة الصفر نقطة. كم نقطة حصل عليها حسن منها؟",
         "question_en": "Six throws hit the zero-point zone. How many points does Hassan get from them?",
-        "accepted_answers": ["0", "صفر", "0 نقطة", "صفر نقطة", "0 نقاط", "صفر نقاط"],
+        "accepted_answers": [
+          "0",
+          "صفر",
+          "0 نقطة",
+          "صفر نقطة",
+          "0 نقاط",
+          "صفر نقاط"
+        ],
         "hint_ar": "أي عدد مضروب في صفر يساوي صفرًا.",
         "hint_en": "Any number times zero is zero."
       },
@@ -258,7 +447,16 @@
         "id": "math-10b-q3",
         "question_ar": "في لعبة حسن: لا رميات في منطقة الثلاث نقاط، ورمية واحدة في منطقة النقطتين، وثلاث رميات في منطقة النقطة الواحدة، وست رميات في منطقة الصفر. كم مجموع نقاطه؟",
         "question_en": "In Hassan's game: no throws in the three-point zone, one throw in the two-point zone, three in the one-point zone and six in the zero zone. What is his total score?",
-        "accepted_answers": ["5", "خمسة", "خمس", "خمسه", "5 نقطة", "خمسة نقطة", "5 نقاط", "خمسة نقاط"],
+        "accepted_answers": [
+          "5",
+          "خمسة",
+          "خمس",
+          "خمسه",
+          "5 نقطة",
+          "خمسة نقطة",
+          "5 نقاط",
+          "خمسة نقاط"
+        ],
         "hint_ar": "احسب نقاط كل منطقة ثم اجمعها: صفر، اثنان، ثلاثة، صفر.",
         "hint_en": "Work out each zone and add: zero, two, three, zero."
       },
@@ -266,7 +464,16 @@
         "id": "math-10b-q4",
         "question_ar": "في لعبة سارة أصابت ثلاث رميات منطقة العشر نقاط. كم نقطة حصلت عليها سارة منها؟",
         "question_en": "In Sara's game, three throws hit the ten-point zone. How many points is that?",
-        "accepted_answers": ["30", "ثلاثون", "ثلاثين", "تلاتين", "30 نقطة", "ثلاثون نقطة", "30 نقاط", "ثلاثون نقاط"],
+        "accepted_answers": [
+          "30",
+          "ثلاثون",
+          "ثلاثين",
+          "تلاتين",
+          "30 نقطة",
+          "ثلاثون نقطة",
+          "30 نقاط",
+          "ثلاثون نقاط"
+        ],
         "hint_ar": "اضرب عشرة في ثلاثة.",
         "hint_en": "Multiply ten by three."
       },
@@ -274,14 +481,27 @@
         "id": "math-10b-q5",
         "question_ar": "أصابت أربع رميات منطقة الثلاث نقاط. كم نقطة حصلت عليها سارة منها؟",
         "question_en": "Four throws hit the three-point zone. How many points does Sara get from them?",
-        "accepted_answers": ["12", "اثنا عشر", "اثني عشر", "اثنى عشر", "اتنا عشر", "12 نقطة", "اثنا عشر نقطة", "12 نقاط", "اثنا عشر نقاط"],
+        "accepted_answers": [
+          "12",
+          "اثنا عشر",
+          "اثني عشر",
+          "اثنى عشر",
+          "اتنا عشر",
+          "12 نقطة",
+          "اثنا عشر نقطة",
+          "12 نقاط",
+          "اثنا عشر نقاط"
+        ],
         "hint_ar": "اضرب ثلاثة في أربعة.",
         "hint_en": "Multiply three by four."
       }
     ],
     "source": {
       "file": "IMG_9540.pdf",
-      "pages": [9, 10]
+      "pages": [
+        9,
+        10
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -291,7 +511,13 @@
     "grade": 3,
     "title_ar": "إيجاد العدد المجهول",
     "title_en": "Finding the missing number",
-    "keywords": ["مجهول", "ناقص", "جدول", "ضرب", "missing number"],
+    "keywords": [
+      "مجهول",
+      "ناقص",
+      "جدول",
+      "ضرب",
+      "missing number"
+    ],
     "explanation_ar": "لإيجاد عدد مجهول في جملة ضرب، فكر في جدول ضرب العدد المعروف. إذا كان ثمانية في عدد مجهول يساوي أربعين، نبحث في جدول الثمانية عن أربعين فنجد أن العدد خمسة. وإذا كان العدد المجهول هو الأول فبدّل ترتيب العددين ثم فكر في الجدول.",
     "explanation_en": "To find a missing factor, think of the multiplication table of the known factor. Eight times five equals forty. If the missing number comes first, switch the order and then use the table.",
     "lesson_steps_ar": [
@@ -306,7 +532,11 @@
         "id": "math-missing-q1",
         "question_ar": "ثمانية في عدد مجهول تساوي أربعين. ما العدد؟",
         "question_en": "Eight times a missing number equals forty. What is the number?",
-        "accepted_answers": ["5", "خمسة", "خمس"],
+        "accepted_answers": [
+          "5",
+          "خمسة",
+          "خمس"
+        ],
         "hint_ar": "عد بالثمانيات حتى تصل إلى أربعين.",
         "hint_en": "Skip-count by eights until forty."
       },
@@ -314,7 +544,14 @@
         "id": "math-missing-q2",
         "question_ar": "أربعة في عدد مجهول تساوي ستة عشر. ما العدد؟",
         "question_en": "Four times a missing number equals sixteen. What is the number?",
-        "accepted_answers": ["4", "أربعة", "أربع", "اربعة", "اربعه", "اربع"],
+        "accepted_answers": [
+          "4",
+          "أربعة",
+          "أربع",
+          "اربعة",
+          "اربعه",
+          "اربع"
+        ],
         "hint_ar": "عد بالأربعات حتى تصل إلى ستة عشر.",
         "hint_en": "Skip-count by fours until sixteen."
       },
@@ -322,7 +559,14 @@
         "id": "math-missing-q3",
         "question_ar": "ثلاثة في عدد مجهول تساوي اثني عشر. ما العدد؟",
         "question_en": "Three times a missing number equals twelve. What is the number?",
-        "accepted_answers": ["4", "أربعة", "أربع", "اربعة", "اربعه", "اربع"],
+        "accepted_answers": [
+          "4",
+          "أربعة",
+          "أربع",
+          "اربعة",
+          "اربعه",
+          "اربع"
+        ],
         "hint_ar": "عد بالثلاثات حتى تصل إلى اثني عشر.",
         "hint_en": "Skip-count by threes until twelve."
       },
@@ -330,7 +574,12 @@
         "id": "math-missing-q4",
         "question_ar": "ستة في عدد مجهول تساوي ستة وثلاثين. ما العدد؟",
         "question_en": "Six times a missing number equals thirty-six. What is the number?",
-        "accepted_answers": ["6", "ستة", "ست", "سته"],
+        "accepted_answers": [
+          "6",
+          "ستة",
+          "ست",
+          "سته"
+        ],
         "hint_ar": "فكر في جدول ضرب الستة.",
         "hint_en": "Think of the six times table."
       },
@@ -338,7 +587,12 @@
         "id": "math-missing-q5",
         "question_ar": "تسعة في عدد مجهول تساوي خمسة وأربعين. ما العدد؟",
         "question_en": "Nine times a missing number equals forty-five. What is the number?",
-        "accepted_answers": ["5", "خمسة", "خمس", "خمسه"],
+        "accepted_answers": [
+          "5",
+          "خمسة",
+          "خمس",
+          "خمسه"
+        ],
         "hint_ar": "فكر في جدول ضرب التسعة.",
         "hint_en": "Think of the nine times table."
       },
@@ -346,7 +600,12 @@
         "id": "math-missing-q6",
         "question_ar": "سبعة في عدد مجهول تساوي اثنين وأربعين. ما العدد؟",
         "question_en": "Seven times a missing number equals forty-two. What is the number?",
-        "accepted_answers": ["6", "ستة", "ست", "سته"],
+        "accepted_answers": [
+          "6",
+          "ستة",
+          "ست",
+          "سته"
+        ],
         "hint_ar": "عد بالسبعات حتى تصل إلى اثنين وأربعين.",
         "hint_en": "Skip-count by sevens until forty-two."
       },
@@ -354,14 +613,20 @@
         "id": "math-missing-q7",
         "question_ar": "ثلاثة في عدد مجهول تساوي صفرًا. ما العدد؟",
         "question_en": "Three times a missing number equals zero. What is the number?",
-        "accepted_answers": ["0", "صفر"],
+        "accepted_answers": [
+          "0",
+          "صفر"
+        ],
         "hint_ar": "أي عدد مضروب في صفر يساوي صفرًا.",
         "hint_en": "Any number multiplied by zero equals zero."
       }
     ],
     "source": {
       "file": "IMG_9540.pdf",
-      "pages": [8, 11]
+      "pages": [
+        8,
+        11
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -371,7 +636,13 @@
     "grade": 3,
     "title_ar": "مراجعة وتدريب - الفصل الأول",
     "title_en": "Chapter one review and practice",
-    "keywords": ["مراجعة", "تدريب", "الفصل الأول", "review", "practice"],
+    "keywords": [
+      "مراجعة",
+      "تدريب",
+      "الفصل الأول",
+      "review",
+      "practice"
+    ],
     "explanation_ar": "هذه مراجعة عامة على دروس الفصل الأول. سنحل تمارين متنوعة لنتذكر ما تعلمناه.",
     "explanation_en": "This is a general review of chapter one. We solve mixed exercises to recall what we learned.",
     "lesson_steps_ar": [
@@ -385,7 +656,13 @@
         "id": "math-review-q1",
         "question_ar": "ما ناتج أربعة في عشرة؟",
         "question_en": "What is four times ten?",
-        "accepted_answers": ["40", "أربعون", "أربعين", "اربعين", "اربعون"],
+        "accepted_answers": [
+          "40",
+          "أربعون",
+          "أربعين",
+          "اربعين",
+          "اربعون"
+        ],
         "hint_ar": "فكر في أربع مجموعات في كل منها عشرة.",
         "hint_en": "Think of four groups of ten."
       },
@@ -393,7 +670,10 @@
         "id": "math-review-q2",
         "question_ar": "ما ناتج صفر في أربعة عشر؟",
         "question_en": "What is zero times fourteen?",
-        "accepted_answers": ["0", "صفر"],
+        "accepted_answers": [
+          "0",
+          "صفر"
+        ],
         "hint_ar": "أي عدد مضروب في صفر يساوي صفرًا.",
         "hint_en": "Any number times zero is zero."
       },
@@ -401,7 +681,15 @@
         "id": "math-review-q3",
         "question_ar": "ما ناتج عشرة في عشرة؟",
         "question_en": "What is ten times ten?",
-        "accepted_answers": ["100", "مئة", "مائة", "ميه", "مية", "مئه", "مائه"],
+        "accepted_answers": [
+          "100",
+          "مئة",
+          "مائة",
+          "ميه",
+          "مية",
+          "مئه",
+          "مائه"
+        ],
         "hint_ar": "عشر مجموعات في كل منها عشرة.",
         "hint_en": "Ten groups of ten."
       },
@@ -409,7 +697,14 @@
         "id": "math-review-q4",
         "question_ar": "خمسة في عدد مجهول تساوي عشرين. ما العدد؟",
         "question_en": "Five times a missing number equals twenty. What is the number?",
-        "accepted_answers": ["4", "أربعة", "أربع", "اربعة", "اربعه", "اربع"],
+        "accepted_answers": [
+          "4",
+          "أربعة",
+          "أربع",
+          "اربعة",
+          "اربعه",
+          "اربع"
+        ],
         "hint_ar": "عد بالخمسات حتى تصل إلى عشرين.",
         "hint_en": "Skip-count by fives until twenty."
       },
@@ -417,7 +712,14 @@
         "id": "math-review-q5",
         "question_ar": "تسعة في عدد مجهول تساوي اثنين وسبعين. ما العدد؟",
         "question_en": "Nine times a missing number equals seventy-two. What is the number?",
-        "accepted_answers": ["8", "ثمانية", "ثماني", "تمانية", "ثمانيه", "تمانيه"],
+        "accepted_answers": [
+          "8",
+          "ثمانية",
+          "ثماني",
+          "تمانية",
+          "ثمانيه",
+          "تمانيه"
+        ],
         "hint_ar": "فكر في جدول ضرب التسعة.",
         "hint_en": "Think of the nine times table."
       },
@@ -425,14 +727,33 @@
         "id": "math-review-q6",
         "question_ar": "في لعبة سارة: ثلاث رميات في منطقة العشر نقاط، واثنتان في منطقة الست نقاط، وأربع في منطقة النقطة، ورمية في منطقة الصفر. كم مجموع نقاطها؟",
         "question_en": "In Sara's game: three throws in the ten-point zone, two in the six-point zone, four in the one-point zone and one in the zero zone. What is her total?",
-        "accepted_answers": ["46", "ستة وأربعون", "ستة وأربعين", "ستة واربعين", "ست وأربعون", "ست وأربعين", "ست واربعين", "ستة واربعون", "سته واربعون", "سته واربعين", "ست واربعون", "46 نقطة", "ستة وأربعون نقطة", "46 نقاط", "ستة وأربعون نقاط"],
+        "accepted_answers": [
+          "46",
+          "ستة وأربعون",
+          "ستة وأربعين",
+          "ستة واربعين",
+          "ست وأربعون",
+          "ست وأربعين",
+          "ست واربعين",
+          "ستة واربعون",
+          "سته واربعون",
+          "سته واربعين",
+          "ست واربعون",
+          "46 نقطة",
+          "ستة وأربعون نقطة",
+          "46 نقاط",
+          "ستة وأربعون نقاط"
+        ],
         "hint_ar": "احسب نقاط كل منطقة ثم اجمعها: ثلاثون، واثنا عشر، وأربعة، وصفر.",
         "hint_en": "Work out each zone then add: thirty, twelve, four and zero."
       }
     ],
     "source": {
       "file": "IMG_9540.pdf",
-      "pages": [12, 13]
+      "pages": [
+        12,
+        13
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -442,7 +763,14 @@
     "grade": 3,
     "title_ar": "ما هو الكمبيوتر؟",
     "title_en": "What is a computer?",
-    "keywords": ["كمبيوتر", "حاسوب", "يسمع", "يفكر", "يرد", "computer"],
+    "keywords": [
+      "كمبيوتر",
+      "حاسوب",
+      "يسمع",
+      "يفكر",
+      "يرد",
+      "computer"
+    ],
     "explanation_ar": "الكمبيوتر جهاز يستقبل ما نعطيه له، ثم يعالج المعلومات، وبعد ذلك يعطينا نتيجة. يشبه صديقًا يسمع السؤال ويفكر فيه ثم يرد، لكنه لا يفكر مثل الإنسان من تلقاء نفسه.",
     "explanation_en": "A computer receives information, processes it, and produces a result. It follows instructions and does not think independently like a person.",
     "questions": [
@@ -450,18 +778,23 @@
         "id": "ict-1-q1",
         "question_ar": "ما الأشياء الثلاثة التي يفعلها الكمبيوتر؟",
         "question_en": "What three things does a computer do?",
-        "accepted_answers": ["يستقبل ويعالج ويرد", "يسمع ويفكر ويرد", "مدخلات ومعالجة ومخرجات"],
+        "accepted_answers": [
+          "يستقبل ويعالج ويرد",
+          "يسمع ويفكر ويرد",
+          "مدخلات ومعالجة ومخرجات"
+        ],
         "hint_ar": "تذكر: يأخذ شيئًا، يعمل عليه، ثم يعطينا النتيجة.",
         "hint_en": "It receives something, works on it, then gives a result."
       }
     ],
     "source": {
       "file": "ICT_Literacy_Basics.pdf",
-      "pages": [2]
+      "pages": [
+        2
+      ]
     },
     "review_status": "needs_owner_review"
   },
-  [
   {
     "lesson_id": "ict_g2_hardware_01",
     "subject": "ict",
@@ -470,7 +803,10 @@
     "summary": "يتكون الكمبيوتر من أجهزة إدخال لإدخال البيانات مثل الشاشة والماوس، وأجهزة إخراج لعرض النتائج مثل الشاشة والسماعات. Computer is made of input and output devices like screen, mouse, and speakers.",
     "source": {
       "file": "ict_basics.json",
-      "pages": [1, 2]
+      "pages": [
+        1,
+        2
+      ]
     },
     "questions": [
       {
@@ -538,7 +874,10 @@
     "summary": "يجب أن نحافظ على أمان بياناتنا الشخصية وأن نستخدم كلمات مرور قوية تحتوي على حروف وأرقام، وألا نشارك معلوماتنا مع الغرباء. We must keep personal data safe using strong passwords with letters and numbers.",
     "source": {
       "file": "ict_basics.json",
-      "pages": [3, 4]
+      "pages": [
+        3,
+        4
+      ]
     },
     "questions": [
       {
@@ -593,7 +932,10 @@
     "summary": "البرمجيات والتطبيقات هي البرامج التي نستخدمها للرسم، الكتابة، أو تصفح الإنترنت. Software are programs we use to draw, write, or browse the web.",
     "source": {
       "file": "ict_basics.json",
-      "pages": [5, 6]
+      "pages": [
+        5,
+        6
+      ]
     },
     "questions": [
       {
@@ -628,15 +970,21 @@
         "misconception_id": "misc_ict_software_01"
       }
     ]
-  }
-]
+  },
   {
     "id": "ict-input-output",
     "subject": "ict",
     "grade": 3,
     "title_ar": "المدخلات والمخرجات",
     "title_en": "Inputs and outputs",
-    "keywords": ["مدخلات", "مخرجات", "سؤال", "نتيجة", "input", "output"],
+    "keywords": [
+      "مدخلات",
+      "مخرجات",
+      "سؤال",
+      "نتيجة",
+      "input",
+      "output"
+    ],
     "explanation_ar": "الشيء الذي نعطيه للكمبيوتر يسمى مدخلًا. والنتيجة التي يعيدها لنا تسمى مخرجًا. عندما تسأل الكمبيوتر سؤالًا يكون السؤال مدخلًا، وتكون إجابته مخرجًا.",
     "explanation_en": "Information given to a computer is input. The result returned by the computer is output.",
     "questions": [
@@ -644,14 +992,20 @@
         "id": "ict-2-q1",
         "question_ar": "عندما تسأل الكمبيوتر سؤالًا، هل سؤالك مدخل أم مخرج؟",
         "question_en": "When you ask a computer a question, is your question input or output?",
-        "accepted_answers": ["مدخل", "مدخلات", "input"],
+        "accepted_answers": [
+          "مدخل",
+          "مدخلات",
+          "input"
+        ],
         "hint_ar": "السؤال ينتقل منك إلى الكمبيوتر.",
         "hint_en": "The question travels from you to the computer."
       }
     ],
     "source": {
       "file": "ICT_Literacy_Basics.pdf",
-      "pages": [2]
+      "pages": [
+        2
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -661,7 +1015,13 @@
     "grade": 3,
     "title_ar": "الخطوات المرتبة والخوارزمية",
     "title_en": "Ordered steps and algorithms",
-    "keywords": ["خطوات", "ترتيب", "خوارزمية", "algorithm", "sequence"],
+    "keywords": [
+      "خطوات",
+      "ترتيب",
+      "خوارزمية",
+      "algorithm",
+      "sequence"
+    ],
     "explanation_ar": "الخوارزمية مجموعة خطوات مرتبة ننفذها للوصول إلى نتيجة صحيحة. إذا غيّرنا ترتيب الخطوات قد لا نحصل على النتيجة المطلوبة.",
     "explanation_en": "An algorithm is an ordered set of steps used to reach a correct result. Changing the order can change the result.",
     "questions": [
@@ -669,14 +1029,21 @@
         "id": "ict-3-q1",
         "question_ar": "لعمل ساندويتش، ماذا نفعل أولًا: نحضر الخبز أم نأكله؟",
         "question_en": "To make a sandwich, what comes first: prepare the bread or eat it?",
-        "accepted_answers": ["نحضر الخبز", "تحضير الخبز", "الخبز"],
+        "accepted_answers": [
+          "نحضر الخبز",
+          "تحضير الخبز",
+          "الخبز"
+        ],
         "hint_ar": "لا يمكن أكل شيء قبل تجهيزه.",
         "hint_en": "You cannot eat it before preparing it."
       }
     ],
     "source": {
       "file": "ICT_Literacy_Basics.pdf",
-      "pages": [2, 3]
+      "pages": [
+        2,
+        3
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -686,7 +1053,14 @@
     "grade": 3,
     "title_ar": "قاعدة لو... إذن",
     "title_en": "The if-then rule",
-    "keywords": ["لو", "إذا", "إذن", "شرط", "قرار", "if then"],
+    "keywords": [
+      "لو",
+      "إذا",
+      "إذن",
+      "شرط",
+      "قرار",
+      "if then"
+    ],
     "explanation_ar": "قاعدة لو أو إذا ثم إذن تساعدنا على اتخاذ قرار. إذا كانت إشارة المرور حمراء، إذن نتوقف وننتظر. الكمبيوتر يستخدم شروطًا مشابهة لاختيار ما يفعله.",
     "explanation_en": "An if-then rule helps make a decision. If the traffic light is red, then stop and wait.",
     "questions": [
@@ -694,14 +1068,22 @@
         "id": "ict-4-q1",
         "question_ar": "إذا كانت إشارة المرور خضراء، ماذا نفعل؟",
         "question_en": "If the traffic light is green, what do we do?",
-        "accepted_answers": ["نمشي", "نعبر", "نتحرك", "go"],
+        "accepted_answers": [
+          "نمشي",
+          "نعبر",
+          "نتحرك",
+          "go"
+        ],
         "hint_ar": "الأخضر يعني أن الطريق يسمح بالحركة.",
         "hint_en": "Green means movement is allowed."
       }
     ],
     "source": {
       "file": "ICT_Literacy_Basics.pdf",
-      "pages": [2, 3]
+      "pages": [
+        2,
+        3
+      ]
     },
     "review_status": "needs_owner_review"
   },
@@ -713,7 +1095,10 @@
     "summary": "يتكون الكمبيوتر من أجهزة إدخال لإدخال البيانات مثل الشاشة والماوس، وأجهزة إخراج لعرض النتائج مثل الشاشة والسماعات. Computer is made of input and output devices like screen, mouse, and speakers.",
     "source": {
       "file": "ict_basics.json",
-      "pages": [1, 2]
+      "pages": [
+        1,
+        2
+      ]
     },
     "questions": [
       {
@@ -781,7 +1166,10 @@
     "summary": "يجب أن نحافظ على أمان بياناتنا الشخصية وأن نستخدم كلمات مرور قوية تحتوي على حروف وأرقام، وألا نشارك معلوماتنا مع الغرباء. We must keep personal data safe using strong passwords with letters and numbers.",
     "source": {
       "file": "ict_basics.json",
-      "pages": [3, 4]
+      "pages": [
+        3,
+        4
+      ]
     },
     "questions": [
       {
@@ -836,7 +1224,10 @@
     "summary": "البرمجيات والتطبيقات هي البرامج التي نستخدمها للرسم، الكتابة، أو تصفح الإنترنت. Software are programs we use to draw, write, or browse the web.",
     "source": {
       "file": "ict_basics.json",
-      "pages": [5, 6]
+      "pages": [
+        5,
+        6
+      ]
     },
     "questions": [
       {
@@ -878,7 +1269,13 @@
     "grade": 3,
     "title_ar": "الكمبيوتر ذكي لكنه يحتاج تعليمات",
     "title_en": "Computers need instructions",
-    "keywords": ["تعليمات", "ذكي", "إنسان", "أوامر", "instructions"],
+    "keywords": [
+      "تعليمات",
+      "ذكي",
+      "إنسان",
+      "أوامر",
+      "instructions"
+    ],
     "explanation_ar": "الكمبيوتر سريع ويمكنه معالجة أشياء كثيرة، لكنه يحتاج إلى تعليمات واضحة ودقيقة. لا يعرف وحده ما نريده إذا لم نخبره بالخطوات.",
     "explanation_en": "A computer is fast, but it needs clear and exact instructions. It cannot know what we want unless we tell it the steps.",
     "questions": [
@@ -886,14 +1283,21 @@
         "id": "ict-5-q1",
         "question_ar": "إذا لم نخبر الكمبيوتر بما نريده، هل سيعرف وحده؟",
         "question_en": "If we do not tell a computer what we want, will it know by itself?",
-        "accepted_answers": ["لا", "لأ", "no"],
+        "accepted_answers": [
+          "لا",
+          "لأ",
+          "no"
+        ],
         "hint_ar": "الكمبيوتر يحتاج تعليمات واضحة.",
         "hint_en": "A computer needs clear instructions."
       }
     ],
     "source": {
       "file": "ICT_Literacy_Basics.pdf",
-      "pages": [2, 3]
+      "pages": [
+        2,
+        3
+      ]
     },
     "review_status": "needs_owner_review"
   }
