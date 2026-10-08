@@ -22,6 +22,7 @@ class TutorRequest(BaseModel):
     subject: Literal["math", "ict"]
     query: str = Field(min_length=1, max_length=300)
     language: Literal["ar", "en"] = "ar"
+    lesson_id: str | None = Field(default=None, max_length=80)
 
 
 class AnswerRequest(BaseModel):
@@ -93,7 +94,23 @@ def lessons(subject: Literal["math", "ict"]) -> list[dict]:
 
 @app.post("/api/tutor")
 def tutor(request: TutorRequest) -> dict:
-    lesson = retrieve(request.subject, request.query)
+    if request.lesson_id:
+        # The learner picked a specific lesson from the list, so skip retrieval.
+        chosen = next(
+            (item for item in LESSONS if item["id"] == request.lesson_id and item["subject"] == request.subject),
+            None,
+        )
+        if chosen is None:
+            raise HTTPException(status_code=404, detail="Lesson not found")
+        source = chosen["source"]
+        lesson = {
+            **chosen,
+            "retrieval_matches": [
+                {"title_ar": chosen["title_ar"], "source_file": source["file"], "pages": source["pages"], "score": 1.0}
+            ],
+        }
+    else:
+        lesson = retrieve(request.subject, request.query)
     question = lesson["questions"][0]
     explanation = lesson["explanation_ar"] if request.language == "ar" else lesson["explanation_en"]
     return {

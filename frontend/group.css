@@ -4,3 +4,11 @@
 #participants{font-size:1.1rem;line-height:1.8}
 .current-turn{font-weight:900;color:var(--purple-dark)}
 .lesson-text{white-space:pre-line}
+.lesson-list{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:.75rem}
+.lesson-list button{width:100%;min-height:72px;display:flex;align-items:center;gap:1rem;text-align:start;font:inherit;font-size:1.2rem;font-weight:800;padding:1rem 1.25rem;border:3px solid #d9d2ef;border-radius:var(--radius);background:#f1edff;color:var(--ink);cursor:pointer}
+.lesson-list button:hover{border-color:var(--purple)}
+.lesson-number{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:14px;background:var(--purple);color:#fff}
+.lesson-status{margin-inline-start:auto;font-size:.9rem;font-weight:600;color:var(--muted)}
+body.mode-vision .lesson-list button{background:#090909;color:#fff;border-color:#fff}
+body.mode-vision .lesson-number{background:#ffe100;color:#000}
+.panel .quiet-button{margin-inline-end:.5rem}
