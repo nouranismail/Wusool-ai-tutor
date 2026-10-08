@@ -2,7 +2,7 @@ from backend.app.rag.vector_store import VectorStore
 
 store = VectorStore()
 
-def retrieve_context(question: str, lesson_id: str = None, threshold: float = 0.15) -> dict:
+def retrieve_context(question: str, lesson_id: str = None, threshold: float = 0.05) -> dict:
     """استرجاع السياق المباشر للسؤال مع التأكد من عتبة التشابه المحددة."""
     results = store.search(question, top_k=3)
     
