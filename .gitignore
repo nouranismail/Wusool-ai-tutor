@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+
+# Database & Vector Stores
+*.sqlite3
+*.db
+rag_engine/knowledge_base/index/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
