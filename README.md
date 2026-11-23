@@ -28,3 +28,105 @@ Wusool-ai-tutor/
 ├── backend/               # [Backend Engineer] FastAPI orchestrator, routes, & DB models
 ├── frontend/              # [Frontend Engineer] Accessible voice-first UI components
 └── tests/                 # Integration & unit tests
+```
+
+---
+
+## 🚀 Backend – Getting Started
+
+### Prerequisites
+
+- Python 3.11+ (project uses Python 3.14)
+- A virtual environment at `.venv/` (already created in this repo)
+
+### 1. Activate the virtual environment
+
+```bash
+# From the project root
+source .venv/bin/activate
+```
+
+### 2. Install backend dependencies
+
+```bash
+pip install -r backend/requirements.txt
+```
+
+> **Note:** The full `requirements.txt` at the project root lists all team
+> dependencies (voice, RAG, LLM, …). Install `backend/requirements.txt`
+> instead to run only the FastAPI backend without heavy ML libraries.
+
+### 3. Configure environment (optional for this milestone)
+
+```bash
+cp .env.example .env
+# Edit .env to add API keys when integrating AI Core / Voice modules.
+```
+
+### 4. Run the backend
+
+```bash
+uvicorn backend.main:app --reload
+```
+
+The server starts at **http://localhost:8000**
+
+### 5. Access API documentation
+
+| Interface | URL |
+|-----------|-----|
+| Swagger UI (interactive) | http://localhost:8000/docs |
+| ReDoc | http://localhost:8000/redoc |
+| OpenAPI schema (JSON) | http://localhost:8000/openapi.json |
+
+### 6. Sample requests
+
+**Root check**
+```bash
+curl http://localhost:8000/
+```
+
+**Health check**
+```bash
+curl http://localhost:8000/health
+```
+
+**Ask the tutor a question**
+```bash
+curl -X POST http://localhost:8000/v1/ask \
+  -H "Content-Type: application/json" \
+  -d '{
+    "question": "ما هو الحاسوب؟",
+    "grade": "3",
+    "subject": "cs",
+    "language": "ar",
+    "input_mode": "text",
+    "mode": "explain"
+  }'
+```
+
+Expected response shape:
+```json
+{
+  "status": "success",
+  "answer": "[EXPLAIN] هذا شرح تجريبي للسؤال الذي طرحته...",
+  "spoken_answer": null,
+  "sources": [
+    {
+      "book": "كتاب cs للصف 3",
+      "lesson": "الوحدة الأولى",
+      "page": 1,
+      "chunk_id": "mock-chunk-001"
+    }
+  ],
+  "confidence": null,
+  "latency_ms": 0.02
+}
+```
+
+### 7. Run the backend tests
+
+```bash
+# From the project root (no pytest needed – uses stdlib unittest)
+python -m unittest tests.test_backend -v
+```
