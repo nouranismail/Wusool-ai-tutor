@@ -9,3 +9,4 @@ data/processed/*
 !data/processed/.gitkeep
 data/vector_db/*
 !data/vector_db/.gitkeep
+rag_engine/chroma_db/
