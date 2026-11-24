@@ -1,45 +1,30 @@
-# Wusool AI Tutor
+# Wusool AI Tutor 🔊
 
-An accessibility-first Arabic voice tutor for Grade 3 learners with dyslexia or visual impairment. The MVP combines a curriculum-grounded retrieval layer with browser speech input/output and an adaptive interface.
+**Wusool** (وصول) is an AI-powered, voice-first inclusive educational platform designed for elementary school students with visual impairments and dyslexia. 
 
-## MVP journey
+Focusing on 3rd and 4th-grade **Computer Science** and **Mathematics** curricula, Wusool translates textbooks into interactive auditory lessons, delivers explainable continuous assessments, and moderates collaborative group learning sessions between peers with diverse learning capabilities.
 
-1. A parent or teacher chooses the learner's accessibility mode.
-2. The learner chooses Math or ICT by voice or by pressing a large card.
-3. The tutor retrieves a lesson from the approved curriculum content.
-4. The lesson is explained in simple Modern Standard Arabic and read aloud.
-5. The tutor asks a spoken question, listens to the answer, and gives supportive feedback.
+---
 
-## Accessibility modes
+## 🌟 Key Features
 
-- **Dyslexia:** calm colors, large spacing, short lines, and reduced visual density.
-- **Visual impairment:** screen-reader landmarks, keyboard navigation, high contrast, large controls, and voice-first operation. The design does not assume that every visually impaired learner has zero usable vision.
+* **Auditory Learning Conversion:** Dynamically converts textbook content and exercises into clear, expressive audio streams.
+* **Explainable Assessment Logic:** Quizzes students verbally, evaluates responses against curriculum context, and explains the *why* behind any incorrect answer.
+* **Inclusive Peer Group Sessions:**
+  * Pairs visually impaired students with students who have dyslexia in real-time learning sessions.
+  * Dynamically moderated by an AI tutor host.
+  * When one student makes a mistake, the AI redirects the prompt to a peer with a complementary capability to explain the correct answer and reasoning.
 
-## Run locally
+---
 
-```bash
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r backend/requirements.txt
-uvicorn backend.app.main:app --reload
-```
+## 🏗️ Repository Architecture & Team Responsibilities
 
-Open `http://127.0.0.1:8000`.
-
-## Curriculum data
-
-The uploaded Grade 3 Math PDF is image-based and must pass Arabic OCR plus human review before ingestion. Do not commit copyrighted textbooks or children's personal data to this public repository. Place authorized source files under `data/raw/` locally, then follow [the content pipeline](docs/CONTENT_PIPELINE.md).
-
-## Current scope
-
-This first slice includes the complete accessible learning loop and a structured preview knowledge base for Math and ICT. Every lesson retains source-page metadata and remains marked `needs_owner_review` until the content owner approves the transcription. Production RAG, speech services, authenticated teacher dashboards, persistent progress, and group sessions are planned next.
-
-## Validate curriculum
-
-```bash
-python scripts/validate_curriculum.py
-python scripts/build_index.py
-python -m pytest -q
-```
-
-The local RAG retriever uses deterministic Arabic-aware hashing embeddings and a persistent SQLite vector index. It requires no API key and returns page-level citations. The next phase connects the retrieved context to a configurable generative model with strict curriculum guardrails.
+```text
+Wusool-ai-tutor/
+├── data_pipeline/         # [Data Engineer] Curricula parsing & dataset creation
+├── ai_voice/              # [Voice AI Engineer] STT, TTS, & audio processing
+├── rag_engine/            # [RAG Engineer] Vector DB & curriculum retrieval
+├── ai_core/               # [AI Brain Engineer] Prompts, evaluation logic, & group moderation
+├── backend/               # [Backend Engineer] FastAPI orchestrator, routes, & DB models
+├── frontend/              # [Frontend Engineer] Accessible voice-first UI components
+└── tests/                 # Integration & unit tests

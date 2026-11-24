@@ -1,0 +1,43 @@
+{
+    "summary": {
+        "book_id": "Science_ARABIC_Prim5_TR1",
+        "status": "passed",
+        "total_chunks": 225,
+        "total_issues": 0,
+        "total_errors": 0,
+        "total_warnings": 0,
+        "valid_chunks": 225,
+        "issue_counts": {},
+        "chunk_type_counts": {
+            "explanation": 73,
+            "practical_activity": 26,
+            "mcq": 62,
+            "fill_in_the_blank": 19,
+            "open_ended": 37,
+            "mixed_question": 4,
+            "experiment": 3,
+            "matching": 1
+        },
+        "section_type_counts": {
+            "lesson": 204,
+            "enrichment": 11,
+            "chapter_review": 6,
+            "appendix": 4
+        },
+        "average_chunk_length": 263.93,
+        "min_chunk_length": 31,
+        "max_chunk_length": 979,
+        "short_chunks_threshold": 20,
+        "long_chunks_threshold": 1500,
+        "duplicate_chunk_ids": [],
+        "total_pages": 113,
+        "learning_pages": 102,
+        "excluded_pages": 11,
+        "learning_pages_without_chunks": [],
+        "uncovered_content_lines": 0,
+        "printed_page_offsets": {
+            "3": 102
+        }
+    },
+    "issues": []
+}
