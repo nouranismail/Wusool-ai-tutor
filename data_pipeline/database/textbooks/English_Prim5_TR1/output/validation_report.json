@@ -1,0 +1,52 @@
+{
+    "summary": {
+        "book_id": "English_Prim5_TR1",
+        "status": "passed",
+        "total_chunks": 264,
+        "total_issues": 0,
+        "total_errors": 0,
+        "total_warnings": 0,
+        "valid_chunks": 264,
+        "issue_counts": {},
+        "chunk_type_counts": {
+            "learning_objective": 6,
+            "open_ended": 77,
+            "vocabulary": 17,
+            "fill_in_the_blank": 44,
+            "dialogue": 6,
+            "matching": 16,
+            "true_false": 8,
+            "mcq": 22,
+            "reading_passage": 16,
+            "grammar_explanation": 5,
+            "explanation": 16,
+            "practical_activity": 23,
+            "self_assessment": 6,
+            "mixed_question": 2
+        },
+        "section_type_counts": {
+            "unit_opener": 6,
+            "lesson": 187,
+            "quick_review": 17,
+            "self_assessment": 5,
+            "review": 17,
+            "story": 22,
+            "glossary": 10
+        },
+        "average_chunk_length": 375.68,
+        "min_chunk_length": 39,
+        "max_chunk_length": 1456,
+        "short_chunks_threshold": 20,
+        "long_chunks_threshold": 1500,
+        "duplicate_chunk_ids": [],
+        "total_pages": 113,
+        "learning_pages": 105,
+        "excluded_pages": 8,
+        "learning_pages_without_chunks": [],
+        "uncovered_content_lines": 0,
+        "printed_page_offsets": {
+            "0": 103
+        }
+    },
+    "issues": []
+}

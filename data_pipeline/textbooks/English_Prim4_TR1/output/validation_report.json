@@ -1,0 +1,63 @@
+{
+    "summary": {
+        "book_id": "English_Prim4_TR1",
+        "status": "passed_with_warnings",
+        "total_chunks": 297,
+        "total_issues": 1,
+        "total_errors": 0,
+        "total_warnings": 1,
+        "valid_chunks": 297,
+        "issue_counts": {
+            "warning:duplicate_text": 1
+        },
+        "chunk_type_counts": {
+            "learning_objective": 6,
+            "open_ended": 65,
+            "vocabulary": 32,
+            "fill_in_the_blank": 61,
+            "dialogue": 6,
+            "matching": 18,
+            "mcq": 22,
+            "practical_activity": 30,
+            "reading_passage": 15,
+            "true_false": 9,
+            "grammar_explanation": 5,
+            "explanation": 19,
+            "self_assessment": 7,
+            "mixed_question": 2
+        },
+        "section_type_counts": {
+            "unit_opener": 6,
+            "lesson": 206,
+            "quick_review": 15,
+            "self_assessment": 8,
+            "review": 20,
+            "story": 20,
+            "glossary": 22
+        },
+        "average_chunk_length": 328.11,
+        "min_chunk_length": 32,
+        "max_chunk_length": 1353,
+        "short_chunks_threshold": 20,
+        "long_chunks_threshold": 1500,
+        "duplicate_chunk_ids": [],
+        "total_pages": 121,
+        "learning_pages": 110,
+        "excluded_pages": 11,
+        "learning_pages_without_chunks": [],
+        "uncovered_content_lines": 0,
+        "printed_page_offsets": {
+            "0": 109
+        }
+    },
+    "issues": [
+        {
+            "severity": "warning",
+            "issue": "duplicate_text",
+            "chunk_index": 135,
+            "chunk_id": "English_Prim4_TR1_U3_QR_P55_C001",
+            "pdf_page_index": null,
+            "details": "Same text as chunk English_Prim4_TR1_U2_QR_P37_C001."
+        }
+    ]
+}
